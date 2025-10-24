@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #ffdde1, #ee9ca7);
+  color: #222;
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+header {
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+header h1 {
+  font-size: 2.2rem;
+  color: #d63384;
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0.8);
+}
+
+header p {
+  font-size: 1rem;
+  color: #444;
+  margin-top: 5px;
+}
+
+.kwamis {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  gap: 20px;
+  width: 90%;
+  max-width: 800px;
+  margin-top: 20px;
+}
+
+.kwami {
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 20px;
+  padding: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.kwami:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 30px #ffb6c1;
+}
+
+.kwami img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  margin-bottom: 10px;
+  transition: transform 0.3s ease;
+}
+
+.kwami img:hover {
+  transform: scale(1.1);
+}
+
+.kwami p {
+  font-weight: 1000;
+  font-size: 1rem;
+  color: #d63384;
+}
+
+#holder-info {
+  margin-top: 40px;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 20px 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  width: 90%;
+  max-width: 800px;
+}
+
+#holder-info h2 {
+  color: #b31283;
+  margin-bottom: 10px;
+}
+
+#holder-name {
+  font-size: 1.1rem;
+  color: #444;
+}
+
+@media (max-width: 600px) {
+  .kwami img {
+    width: 100px;
+    height: 100px;
+  }
+
+  header h1 {
+    font-size: 1.7rem;
+  }
+}
